@@ -103,12 +103,12 @@ let Survivekiller =killer.length-didkiller.length;
            sessionStorage.setItem("Survivekiller",Survivekiller);
            if(Survivecivilian===Survivekiller){
             alert("杀手胜利")
-            window.location.href = "jQ4-2.html";
+            window.location.href = "https://tianrandai2.github.io/-WEB/jQ4-2.html";
            }else if(didkiller.length===killer.length){
                alert("平民胜利")
-               window.location.href = "jQ4-2.html";
+               window.location.href = "https://tianrandai2.github.io/-WEB/jQ4-2.html";
            }else {
-            window.location.href = "jQ3-2.html";
+            window.location.href = "https://tianrandai2.github.io/-WEB/jQ3-2.html";
            }
         }
     
@@ -117,5 +117,5 @@ let Survivekiller =killer.length-didkiller.length;
  })
  document.getElementsByTagName("img")[1].onclick=function(){
     sessionStorage.clear();
-    window.location.href = "JS2-3.html";
+    window.location.href = "https://tianrandai2.github.io/-WEB/JS2-3.html";
  }
