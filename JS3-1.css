@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #29bde0;
+  }
+  
+  header {
+    width: 100%;
+    height: 108px;
+  }
+  
+  header .li {
+    width: 100%;
+    height: 108px;
+    position: fixed;
+    top: 0;
+    background-color: #29bde0;
+  }
+  
+  header .li .div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    font-size: 17px;
+    color: white;
+    background-color: #29bde0;
+  }
+  
+  header .li .div1 img {
+    width: 21px;
+    height: 21px;
+    margin: 0 10px;
+  }
+  
+  header .li .div2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 43px;
+    font-size: 12px;
+    color: black;
+    padding-left: 10px;
+    background-color: #b9e9f5;
+  }
+  
+  header .li .div2 img {
+    width: 28px;
+    margin: 0 10px;
+  }
+  
+  header .li .div2 audio {
+    opacity: 0;
+    transform: rotate(180deg);
+    position: absolute;
+    right: 0;
+  }
+  
+  header .li span {
+    display: block;
+    width: 0;
+    margin-left: 37px;
+    border-top: 10px solid #b9e9f5;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+  }
+  
+  header .li .div3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 21px;
+    font-size: 12px;
+    color: white;
+    margin-left: 37px;
+  }
+  
+  main {
+    width: 100%;
+    padding-top: 20px;
+    background-color: #29bde0;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+  
+  
+  main .box {
+    width: 23vw;
+    height: 23vw;
+    border: 4px solid white;
+    margin:0 4.9vw 12vw;
+    text-align: center;
+  }
+  
+  main .box .box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 78%;
+    background-color: #f5c97b;
+    font-size: 4vw;
+  }
+  
+  main .box .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 22%;
+    background-color: #83b09a;
+    font-size: 3vw;
+    color: white;
+  }
+
+ 
+  footer {
+    width: 100%;
+    height: 100px;
+  }
+  
+  footer div {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #29bde0;
+  }
+  
+  footer div a {
+    font-size: 150%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 82%;
+    height: 46%;
+    background-color: #fbb435;
+    border: 1px solid #fbb435;
+  }
+  

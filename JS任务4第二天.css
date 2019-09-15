@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(240, 240, 240)
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background-color:rgb(41, 189, 224);
+    color:white;
+    font-size: 20px;
+}
+header .left{
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+    margin-left: 20px;
+}
+header .right{
+    width: 22px;
+    height: 2px;
+    background-color:white;
+    position: relative;
+    margin-right: 20px;
+    transform: rotate(45deg);
+}
+header .right::after{
+    content: "";
+    height: 22px;
+    width: 2px;
+    background-color:white;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+}
+main .data{
+    margin: 20px auto 0;
+    width: 98%;
+    line-height: 40px;
+    background-color: white;
+    color: rgb(41, 189, 224);
+    position: relative;
+    text-align: center;
+    border: 1px solid rgb(210, 210, 210);
+}
+main .data::after{
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-left: 2px solid rgb(41, 189, 224);
+    border-bottom: 2px solid rgb(41, 189, 224);
+    transform: rotate(-45deg);
+    margin-left: 20px;
+    position: absolute;
+    right: 15px;
+    top:8px;
+}
+main .centent{
+    width: 98%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid rgb(210, 210, 210);
+    border-top: none;
+    padding: 20px 0 30px;
+    display: none;
+}
+main .centent .chengxv{
+    background-color: rgb(36, 167, 198);
+    font-size: 15px;
+    line-height: 35px;
+    margin:0 30px 0 60px;
+    color: white;
+    text-align: center;
+}
+ .sj{
+    width: 0;
+    border-right: 10px solid rgb(36, 167, 198);
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    left: -10px;
+    top:-23px;
+}
+main .centent .hei{
+    width: 28px;
+    height: 28px;
+    border:  1px solid rgb(210, 210, 210);
+    border-radius: 50%;
+    background-image: url(https://tianrandai2.github.io/tupian/69.png);
+    background-repeat: no-repeat;
+    background-size:60%;
+    background-position:center center;
+    position: absolute;
+    top: -33px;
+    left: 15px;
+}
+main .centent .bai{
+    width: 28px;
+    height: 28px;
+    border:  1px solid rgb(210, 210, 210);
+    border-radius: 50%;
+    background-image: url(https://tianrandai2.github.io/tupian/70.png);
+    background-repeat: no-repeat;
+    background-size:60%;
+    background-position:center center;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+}
+main .centent .sw{
+    line-height: 35px;
+    text-align: center;
+    font-size: 12px;
+
+}
+footer .di{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(153,223,240,0.6);
+  }
+  footer .di .jieshuyouxi{
+    width: 100%;
+    margin: 10px 5%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+   line-height: 40px;
+    background-color: red;
+    border-radius: 5px;
+    text-decoration:none;
+  }
+  footer .di .faguanrzhi{
+    width: 100%;
+    margin: 10px 5%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(251,180,53);
+    border-radius: 5px;
+    text-decoration:none;
+  }
