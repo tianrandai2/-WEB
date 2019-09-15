@@ -51,5 +51,5 @@ $("#sha").text("杀 手"+ killer.length+"人");
 $("#min").text("平 民"+ civilian.length+"人");
 $("#shang").click(function(){
 sessionStorage.clear();
-window.location.href = "jQ2-1.html";
+window.location.href = "https://tianrandai2.github.io/-WEB/jQ2-1.html";
 })

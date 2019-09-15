@@ -34,11 +34,11 @@ $("#ck3").click(function(){
 $(".left").click(function(){
    
     if(confirm("确定要退出游戏吗")){sessionStorage.clear();
-        window.location.href = "jQ2-1.html"}
+        window.location.href = "https://tianrandai2.github.io/-WEB/jQ2-1.html"}
     
 })
 $(".right").click(function(){
    
     if(confirm("确定要退出游戏吗")){sessionStorage.clear();
-        window.location.href = "jQ2-1.html"}
+        window.location.href = "https://tianrandai2.github.io/-WEB/jQ2-1.html"}
 })

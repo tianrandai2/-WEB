@@ -24,7 +24,7 @@ for(var i=0;i<key.length;i++){
     sessionStorage.setItem("k2",k2)
     sessionStorage.setItem("k3",k3)
     sessionStorage.setItem("k4",k4)
-    window.location.href = "jQ3-2.html";
+    window.location.href = "https://tianrandai2.github.io/-WEB/jQ3-2.html";
     });
     // 从后一个页面跳转回来时记录死亡的人数
     if(death!==null){
@@ -35,5 +35,5 @@ for(var i=0;i<key.length;i++){
      }
      $("img").eq(1).click(function(){
         if(confirm("确定要退出游戏吗")){sessionStorage.clear();
-            window.location.href = "jQ2-1.html"}
+            window.location.href = "https://tianrandai2.github.io/-WEB/jQ2-1.html"}
      })

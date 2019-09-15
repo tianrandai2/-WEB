@@ -89,5 +89,5 @@ function xipai(){
 $("#fp").click(function(){
     xipai()
     sessionStorage.setItem("key",JSON.stringify(xipai()));
-    　  window.location.href = "jQ2-2.html"
+    　  window.location.href = "https://tianrandai2.github.io/-WEB/jQ2-2.html"
 });

@@ -45,7 +45,7 @@ $(".Killing").eq(y.length-1).click(function(){
         sessionStorage.setItem("cun2",JSON.stringify(cun));
         sessionStorage.setItem("death2",JSON.stringify(death));
     }
-         window.location.href = "jQ4-1.html"}else{
+         window.location.href = "https://tianrandai2.github.io/-WEB/jQ4-1.html"}else{
             alert("请正确游戏")
         }
 });
@@ -100,7 +100,7 @@ if($(".speak").eq(y.length-1).css("background-color") === "rgb(128, 128, 128)"){
     sessionStorage.setItem("k4",k4)
     y.push(1)
     sessionStorage.setItem("y2",JSON.stringify(y));
-    window.location.href = "jQ4-1.html";
+    window.location.href = "https://tianrandai2.github.io/-WEB/jQ4-1.html";
 }else{
     alert("请正确游戏");
 }
@@ -133,11 +133,11 @@ for(var p2 = 0;p2<y.length-1;p2++){
     })
     $(".right").eq(0).click(function(){
         if(confirm("确定要退出游戏吗")){sessionStorage.clear();
-            window.location.href = "jQ2-1.html"}
+            window.location.href = "https://tianrandai2.github.io/-WEB/jQ2-1.html"}
     })
     $(".left").eq(0).click(function(){
         sessionStorage.setItem("death2",JSON.stringify(death));
         sessionStorage.setItem("cun",JSON.stringify(cun));
         sessionStorage.setItem("k",k)
-        window.location.href = "jQ3-1.html";
+        window.location.href = "https://tianrandai2.github.io/-WEB/jQ3-1.html";
     })
