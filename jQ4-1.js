@@ -116,6 +116,6 @@ let Survivekiller =killer.length-didkiller.length;
     }
  })
  document.getElementsByTagName("img")[1].onclick=function(){
-    sessionStorage.clear();
-    window.location.href = "https://tianrandai2.github.io/-WEB/JS2-3.html";
+    if(confirm("确定要退出游戏吗")){sessionStorage.clear();
+        window.location.href = "https://tianrandai2.github.io/-WEB/jQ2-1.html"}
  }
