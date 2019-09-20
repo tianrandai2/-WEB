@@ -1,0 +1,43 @@
+body {
+  background-image: url(78.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  width: 400px;
+  height: 200px;
+  background-color: #d3dde0;
+  margin: 15% auto;
+  text-align: center;
+  border-radius: 7px;
+}
+
+form input {
+  width: 330px;
+  height: 33px;
+  border-radius: 5px;
+  margin: 20px auto 0;
+  border: 1px solid #bec5c7;
+  padding-left: 13px;
+}
+
+form #ti {
+  font-size: 14px;
+  color: red;
+  margin: 0 auto;
+  position: absolute;
+  left: 65px;
+}
+
+form button {
+  width: 330px;
+  height: 33px;
+  border-radius: 5px;
+  margin: 20px auto 0;
+  border: 1px solid #bec5c7;
+  padding-left: 13px;
+  background-color: blue;
+  color: white;
+  margin-top: 25px;
+}

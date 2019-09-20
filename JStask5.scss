@@ -1,0 +1,41 @@
+body{
+    background-image: url(78.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+form{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(211, 221, 224);
+    margin: 15% auto;
+    text-align: center;
+    border-radius: 7px;
+    @mixin input{
+        width:330px;
+        height: 33px;
+        border-radius: 5px;
+        margin: 20px auto 0;
+        border:1px solid rgb(190, 197, 199);
+        padding-left:13px;
+
+    }
+
+    input{
+        @include input;
+    }
+    #ti{
+         font-size: 14px;
+         color: red;
+         margin: 0 auto;
+         position: absolute;
+         left:65px;
+
+    }
+    button{
+        @include input;
+        background-color: blue;
+        color:white;
+        margin-top:25px;
+   }
+}
+
