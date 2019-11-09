@@ -1,0 +1,78 @@
+<div class="father">
+    <div class="top">
+        新增Article
+    </div>
+    <div class="main">
+        <div class="ng">
+        <span class="left">标题名称</span>
+        <input type="text" class="title" [(ngModel)]="title"> 
+       </div>
+       <div class="ng">
+            <span class="left">类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型</span>
+            <select class="type" id="" [(ngModel)]="type.value">
+          <ng-container *ngFor="let item of type.option">
+                 <option [value]="item" *ngIf="item=='请选择'">{{item}}</option>
+                 <option [value]="item"*ngIf="item==0">首页banner</option>
+                 <option [value]="item" *ngIf="item==1">找职位banner</option>
+                 <option [value]="item"*ngIf="item==2">找精英banner</option>
+                 <option [value]="item" *ngIf="item==3">行业大图</option>
+               </ng-container>
+            </select>
+
+            <select class="type" id="" [(ngModel)]="dt.value" *ngIf="type.value==3">
+                    <ng-container *ngFor="let item of dt.option">
+                           <option [value]="item" *ngIf="item=='请选择'">{{item}}</option>
+                           <option [value]="item"*ngIf="item==0">移动互联网</option>
+                           <option [value]="item" *ngIf="item==1">电子商务</option>
+                           <option [value]="item"*ngIf="item==2">企业服务</option>
+                           <option [value]="item" *ngIf="item==3">O2O</option>
+                           <option [value]="item" *ngIf="item==4">教育</option>
+                           <option [value]="item" *ngIf="item==5">金融</option>
+                           <option [value]="item" *ngIf="item==6">游戏</option>
+                         </ng-container>
+                      </select>
+       </div>
+       <div class="ng">
+            <span class="left">说&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;明</span>
+            <input type="text" class="title" [(ngModel)]="explain"> 
+       </div>
+       <div class="ng">
+            <span class="left">跳转链接</span>
+            <input type="text" class="title" [(ngModel)]="jumplink"> 
+       </div>
+       <div class="ng">
+                <span class="left">配&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图</span> 
+               <input type="file" accept="image/*" id="tu" (change)='tu($event)' *ngIf="one">
+               <input type="file" accept="image/*" id="tu" (change)='tu($event)' *ngIf="two">
+                <label for="tu" class="upload" >选择文件</label> 
+           </div> 
+         <div class="ng" style="justify-content: center; width:65%; margin: 0 auto;"><img src="" alt="" id='imj' style="max-width:100%"></div>    
+          <div class="ng2">
+               <span class="sc">图片名</span>
+               <span class="sc">文件大小</span>
+               <span class="sc">进度</span>
+               <span class="sc">操作</span>
+               <span class="sc">操作</span>
+          </div>
+          <div class="ng3">
+               <span class="sc">{{imagename}}</span>
+               <span class="sc">{{size}}</span>
+               <div class="sc3" *ngIf="this.imagename!==undefined&&this.imagename!==null"><span id="progress" class="progress" ></span></div> 
+               <div class="sc"><span  id="io" *ngIf="this.probar==100">&#10004;</span></div>
+               <span class="sc2" style="background: chartreuse;" *ngIf="this.imagename!==undefined&&this.imagename!==null&&this.probar!=100" (click)="sc()"> <i class="fa fa-arrow-circle-o-up"></i> 上传</span>
+               <span class="sc2" style="background: rgb(170, 212, 128);" *ngIf="this.probar==100&&this.imagename!==null"><i class="fa fa-arrow-circle-o-up"></i> 上传</span>
+               <span class="sc2" style="background: red;" *ngIf="this.imagename!==undefined&&this.imagename!==null" (click)="delete()"> <i class="fa fa-trash"></i> 删除</span>
+          </div> 
+          <div class="ng4">
+             <div style="margin-left:160px;">
+                  <span class="sx" *ngIf="this.title==undefined||this.type.value=='请选择'||this.explain==undefined||this.jumplink==undefined||this.title==''||this.explain==''||this.jumplink==''||this.type.value=='3'&&this.dt.value=='请选择'||this.image==undefined||this.image=='' " style="background: rgb(196, 235, 160);">立即上线</span>
+                  <span class="sx" *ngIf="this.title!=undefined&&this.title!=''&&this.type.value!='请选择'&&this.type.value!='3'&&this.explain!=undefined&&this.explain!=''&&this.jumplink!=undefined&&this.jumplink!=''&&this.image!=undefined&&this.image!=''||this.title!=undefined&&this.title!=''&&this.explain!=undefined&&this.explain!=''&&this.jumplink!=undefined&&this.jumplink!=''&&this.type.value=='3'&&this.dt.value!='请选择'&&this.image!=undefined&&this.image!=''   "(click)="online_immediately()">立即上线</span>
+                  <span class="sx" *ngIf="this.title==undefined||this.type.value=='请选择'||this.explain==undefined||this.jumplink==undefined||this.title==''||this.explain==''||this.jumplink==''||this.type.value=='3'&&this.dt.value=='请选择'||this.image==undefined||this.image=='' " style="background: rgb(196, 235, 160);">存为草稿</span>
+                  <span class="sx" *ngIf="this.title!=undefined&&this.title!=''&&this.type.value!='请选择'&&this.type.value!='3'&&this.explain!=undefined&&this.explain!=''&&this.jumplink!=undefined&&this.jumplink!=''&&this.image!=undefined&&this.image!=''||this.title!=undefined&&this.title!=''&&this.explain!=undefined&&this.explain!=''&&this.jumplink!=undefined&&this.jumplink!=''&&this.type.value=='3'&&this.dt.value!='请选择'&&this.image!=undefined&&this.image!=''   "(click)="draft()">存为草稿</span>
+             </div>
+             <div class="cancel" style="margin-right: 160px;">取消</div>
+          </div>
+    </div>
+    <app-popup *ngIf="bloor" [goonline]="Passvalue"   (Children)='popup($event)'></app-popup>
+
+    

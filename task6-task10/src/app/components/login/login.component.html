@@ -1,0 +1,6 @@
+<form action="">
+    <input type="text"  placeholder="请输入用户名" name="name" [(ngModel)]="name" (click)="clickuser()">
+    <input type="password" placeholder="请输入密码" name="pwa" [(ngModel)]="pwd" (click)="clicpwd()">  
+    <div  style="position: relative"><div id="ti">{{errorprompt}}</div></div>
+    <button id="dl" (click)="Clicklogin()">登录</button>
+</form>

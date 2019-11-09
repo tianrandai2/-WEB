@@ -1,0 +1,338 @@
+header {
+  margin: 25px 25px;
+  height: 160px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  background: white;
+}
+
+header .one {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 15px 0 20px;
+  position: relative;
+}
+
+header .one .time {
+  font-size: 13px;
+  font-weight: 900;
+  margin: 0 25px;
+}
+
+header .one .datetime {
+  width: 180px;
+  height: 30px;
+  border: 1px solid #cecdcd;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+header .one .fenge {
+  width: 15px;
+  height: 2px;
+  background: black;
+  margin: 0 55px;
+}
+
+header .one .leixing {
+  font-size: 13px;
+  font-weight: 900;
+  margin: 0 40px;
+}
+
+header .one .locn {
+  position: absolute;
+  right: 20px;
+  width: 0px;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-top: 7px solid black;
+}
+
+header .two {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 15px 0;
+}
+
+header .two .state {
+  font-size: 13px;
+  font-weight: 900;
+  margin: 0 25px;
+}
+
+header .three {
+  display: flex;
+  height: 45px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .three .button1 {
+  width: 50px;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  background: #50ad50;
+  border: 1px solid #50ad50;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+header .three .button2 {
+  width: 50px;
+  height: 30px;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  background: #d40e0e;
+  border: 1px solid #d40e0e;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+header .down {
+  -webkit-appearance: none;
+  width: 190px;
+  height: 30px;
+  font-size: 13px;
+  padding-left: 15px;
+  border-radius: 5px;
+  background-image: url("https://tianrandai2.github.io/tupian/66.png");
+  background-repeat: no-repeat;
+  background-position: 98% -5px;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    height: auto;
+  }
+  header .one {
+    flex-wrap: wrap;
+  }
+  header .one .datetime {
+    width: 100%;
+    margin: 10px;
+  }
+  header .one .leixing {
+    margin: 0 25px;
+  }
+  header .one .fenge {
+    margin: 0 25px;
+  }
+  header .down {
+    width: 100%;
+    margin: 10px;
+  }
+  header .two {
+    flex-wrap: wrap;
+  }
+}
+
+.List_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 25px 0;
+  height: 35px;
+  border: 1px solid gainsboro;
+  border-bottom: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.List_header .add {
+  width: 45px;
+  height: 20px;
+  background: #50ad50;
+  border: 1px solid #50ad50;
+  outline: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.List_header .add i {
+  margin-right: 2px;
+  background: #50ad50;
+  color: white;
+}
+
+.list_main {
+  margin: 0px 25px;
+  height: auto;
+  background: white;
+  border: 1px solid gainsboro;
+  overflow-x: scroll;
+}
+
+.list_main .list_sort {
+  margin: 15px 10px 0;
+  height: 30px;
+  font-weight: 900;
+  min-width: 940px;
+  border: 1px solid gainsboro;
+  display: flex;
+}
+
+.list_main .id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  width: 50px;
+}
+
+.list_main .imge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  width: 80px;
+}
+
+.list_main .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  width: 120px;
+}
+
+.list_main .type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  width: 120px;
+}
+
+.list_main .releaseTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  width: 120px;
+}
+
+.list_main .modificationTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  width: 120px;
+}
+
+.list_main .publisher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  width: 80px;
+}
+
+.list_main .zhuangtai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  width: 70px;
+}
+
+.list_main .operation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  flex-shrink: 0;
+  width: 180px;
+}
+
+.list_main .bianji {
+  margin: 0 10px;
+  font-size: 12px;
+  color: #337ab7;
+  cursor: pointer;
+}
+
+.list_main .list_contents {
+  border: 1px solid gainsboro;
+  display: flex;
+  margin: 0 10px;
+  height: 50px;
+}
+
+.list_main .list_contents img {
+  width: 50px;
+  height: 40px;
+}
+
+.list_main .list_contents:nth-child(even) {
+  background: #EEE;
+}
+
+.list_main .list_contents:hover {
+  background: #e0f2be;
+}
+
+.page {
+  margin: 0 35px;
+  text-align: right;
+  line-height: 50px;
+  font-size: 14px;
+}
+
+.page .tiao {
+  width: 35px;
+  height: 25px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.page .page1 {
+  border: 1px solid #dddddd;
+  padding: 4px 8px;
+  margin: 0 10px;
+  color: #337ab7;
+  background: white;
+  cursor: pointer;
+}
+
+.page .page2 {
+  border: 1px solid #dddddd;
+  padding: 4px 10px;
+  margin: 0 5px;
+  color: #337ab7;
+  background: white;
+  cursor: pointer;
+}
+
+.page .page3 {
+  border: 1px solid #dddddd;
+  padding: 4px 10px;
+  margin: 0 5px;
+  color: #337ab7;
+  background: white;
+  cursor: pointer;
+}
+
+.colors {
+  background: blue !important;
+  color: white !important;
+}

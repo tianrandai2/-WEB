@@ -1,0 +1,92 @@
+.cover{
+    width: 150vw;
+    height:150vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top:0;
+    left: -50%;
+    z-index: 999;
+}
+.prompt_box{
+    width: 550px;
+    border-radius:5px;
+    text-align: center;
+    background: white;
+    position: fixed;
+    top:30px;
+    right:50%;
+    margin-right: -250px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.tishi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(206, 205, 205);
+    height: 25px;
+    padding: 13px;
+    .hint{
+        font-size: 15px;
+        color: cornflowerblue;
+    }
+    .close{
+        font-size: 13px;
+        color:rgb(206, 205, 205);
+        cursor:pointer;
+    }
+    .close:hover{
+        color:black;
+    }
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height: 50px;
+    color:rgb(160, 157, 157);
+}
+.text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(206, 205, 205);
+}
+.text3{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 13px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgb(206, 205, 205);
+}
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 55px;
+    padding-right: 15px;
+    .but1{
+        width:50px;
+        height: 30px;
+        margin:0 5px;
+        font-size: 14px;
+        color: white;
+        background: orange;
+        border:1px solid orange;
+        border-radius:3px;
+    }
+    .but2{
+        width:50px;
+        height: 30px;
+        margin:0 5px;
+        font-size: 14px;
+        color: white;
+        background: blue;
+        border:1px solid blue;
+        border-radius:3px;
+    }
+}
