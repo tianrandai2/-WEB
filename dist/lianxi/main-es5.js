@@ -932,6 +932,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var ngx_quill__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! ngx-quill */
     "./node_modules/_ngx-quill@7.3.9@ngx-quill/fesm2015/ngx-quill.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/_@angular_common@8.2.10@@angular/common/fesm2015/common.js");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -940,7 +946,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _components_lianxi_lianxi_component__WEBPACK_IMPORTED_MODULE_6__["LianxiComponent"], _components_lianxi_lianxi1_lianxi1_component__WEBPACK_IMPORTED_MODULE_7__["Lianxi1Component"], _components_lianxi_lianxi2_lianxi2_component__WEBPACK_IMPORTED_MODULE_8__["Lianxi2Component"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ngx_quill__WEBPACK_IMPORTED_MODULE_9__["QuillModule"].forRoot()],
-      providers: [],
+      providers: [{
+        provide: _angular_common__WEBPACK_IMPORTED_MODULE_10__["LocationStrategy"],
+        useClass: _angular_common__WEBPACK_IMPORTED_MODULE_10__["HashLocationStrategy"]
+      }],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })], AppModule);
     /***/

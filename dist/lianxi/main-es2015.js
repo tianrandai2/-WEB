@@ -431,6 +431,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_lianxi_lianxi1_lianxi1_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/lianxi/lianxi1/lianxi1.component */ "./src/app/components/lianxi/lianxi1/lianxi1.component.ts");
 /* harmony import */ var _components_lianxi_lianxi2_lianxi2_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/lianxi/lianxi2/lianxi2.component */ "./src/app/components/lianxi/lianxi2/lianxi2.component.ts");
 /* harmony import */ var ngx_quill__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ngx-quill */ "./node_modules/_ngx-quill@7.3.9@ngx-quill/fesm2015/ngx-quill.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common */ "./node_modules/_@angular_common@8.2.10@@angular/common/fesm2015/common.js");
+
 
 
 
@@ -457,7 +459,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
             ngx_quill__WEBPACK_IMPORTED_MODULE_9__["QuillModule"].forRoot()
         ],
-        providers: [],
+        providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_10__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_10__["HashLocationStrategy"] }],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })
 ], AppModule);
