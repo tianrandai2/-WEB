@@ -1,0 +1,479 @@
+html{
+  background-color: rgb(250,250,250);
+}
+body{
+  background-color: rgb(250,250,250);
+}
+header{
+  width:100%;
+}
+header .top{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color: white;
+  font-size: 13px;
+  color: rgb(41,176,120);
+  height: 30px;
+}
+header .top img{
+  position: absolute;
+  right: 10%;
+  width: 80px;
+  height: 20px;
+}
+header .top span{
+  position: absolute;
+  left: 12%;
+  height: 30px;
+  line-height: 30px;
+}
+/*导航*/
+.bc{
+  position: relative;
+  background-color: rgb(41,176,120);
+  border-radius:0;
+  border: none;
+  margin-bottom:0;
+}
+.navbar-default .navbar-nav>li>a{
+  color: white;
+  padding-bottom: 12px;
+  text-decoration:none;
+}
+
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:visited{
+  color: white;
+}
+.navbar-collapse{
+  text-align: center;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color: rgb(41,176,120);
+}
+.navbar-default .navbar-toggle{
+  border-color:rgba(0,0,0,.1);
+}
+.bc img{
+  position: absolute;
+  top:3px;
+  left:12%;
+  width: 120px;
+}
+.A{
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  visibility: hidden;
+}
+header .navbar-default .navbar-nav>li:hover .A{
+  visibility: visible;
+}
+/*中间主体第一部分*/
+main{
+  width:100%;
+}
+.box1{
+  text-align: center;
+}
+.zhongjianxiaotubiao{
+  margin-top: 8vh;
+  padding: 0 9%;
+}
+ .div1{
+  font-size: 15px;
+  color:rgb(153,153,153);
+  margin: 10px 0px;
+  text-align: center;
+  padding-left: 7px;
+}
+.box2{
+  font-size: 15px;
+  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+.box2 span{
+  font-size: 16px;
+  color:rgb(38,162,111);
+}
+.box2 span::before{
+  position: relative;
+  top: 2px;
+  content: url("https://tianrandai2.github.io/tupian/44.png");
+  margin: 5px 5px;
+}
+.col-sm-3main1{
+  height: 160px;
+}
+
+.col-sm-3-border-left{
+  border-left: 2px dashed rgb(222,222,222);
+}
+@media (max-width: 1200px){
+  .col-sm-3-border-left{
+    border-left: none;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 900px){
+  .col-sm-3main1 {
+    width: 50%;
+  }
+  .col-sm-3-border-left{
+    width: 50%;
+  }
+}
+@media (max-width: 899px){
+  .col-sm-3main1 {
+    width: 100%;
+  }
+  .col-sm-3-border-left{
+    width: 100%;
+  }
+}
+main .div2{
+  width: 100%;
+  margin: 130px 0 80px;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+.div3{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(225,225,225);
+  border-radius: 100%;
+  font-size: 18px;
+  color:rgb(41,176,120) ;
+  background-color: white;
+}
+/*中间主体第二部分*/
+.main2{
+  padding: 0 8vw;
+}
+.div4{display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0;
+  color: rgb(153,153,153);
+}
+
+.aa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0;
+  color: rgb(153,153,153);
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 1200px) and (min-width: 769px){
+  .div4 , .aa{
+    width: 50%;
+  }
+}
+.aa img{
+  display: none;
+}
+@media (max-width: 1200px){
+  .aa img {
+    display: block;
+  }
+}
+
+/*中间主体第三部分*/
+.div5{
+  width: 100%;
+  margin: 100px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+.main3{
+  width: 23%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px 80px 20px;
+  margin-bottom: 30px;
+  border: 2px solid #eeeded;
+  border-radius: 10px;
+  background-color: white;
+}
+.main5{
+  padding: 0 12vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.div7{
+  font-size: 18px;
+  margin: 20px 0;
+}
+.main3:hover{
+  box-shadow:0 0 10px black;
+}
+/*第三部分换页摁纽*/
+.div8{
+  width:20px;
+  height:20px;
+  margin-left:5px;
+  border-radius:100%;
+  border: 1px solid rgb(153,153,153);
+  background-color:#eeeded;
+}
+.div9{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div8:hover{
+  background-color: #4cae4c;
+}
+/*第四部分*/
+.div10{
+  margin: 100px 0 80px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.main4{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15vw;
+}
+.div11{
+  width: 170px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  background-color: white;
+}
+@media (max-width: 768px){
+  .div11 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 769px){
+  .div11 {
+    width: 50%;
+  }
+  .main4 {
+    justify-content:flex-start;
+  }
+}
+@media  (min-width: 1200px){
+  .main4 {
+    padding: 0;
+  }
+}
+.div11:hover{
+  box-shadow: 0 0 5px 2px #b0b0b0;
+  z-index: 2;
+}
+
+/*底部*/
+/*底部第一部分*/
+footer{
+  width: 100%;
+  background-color: white;
+  margin-top: 50px;
+}
+.div12{
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+}
+footer .footer2 ul{
+  overflow: hidden;
+  color: rgb(153,153,153);
+  padding-left: 0;
+}
+.bb{
+  overflow: hidden;
+  color: rgb(153,153,153);
+  padding-left: 0;
+}
+@media only screen and (max-width: 900px){
+  .bb{
+    margin-bottom: 0;
+  }
+}
+footer .footer2 ul li{
+  float: left;
+  margin-left: 40px;
+}
+footer .footer2 ul li a{
+   font-size: 13px;
+   color:rgb(153,153,153);
+   text-decoration:none;
+}
+footer .footer2 ul li a:hover{
+  border-bottom:1px solid green;
+}
+/*底部第二部分*/
+.div13{
+  display: flex;
+  flex-wrap:wrap;
+  position: relative;
+  width: 100%;
+  background-color: rgb(38,162,111);
+  padding: 0 15vw;
+}
+.div14{
+  position: relative;
+  padding: 15px 10px;
+  width: 30%;
+  height: 120px;
+}
+footer .div13 .div14 .span4{
+  position: absolute;
+  top: 20px;
+  font-size: 14px;
+  color: white;
+}
+footer .div13 .div14 .span5{
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  color: white;
+}
+.a1{
+  position: absolute;
+  top: 55px;
+  font-size: 12px;
+  color: white;
+}
+.a2{
+  position: absolute;
+  top: 55px;
+  left: 100px;
+  font-size: 12px;
+  color: white;
+}
+.a3{
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  color: white;
+}
+.a4{
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  font-size: 12px;
+  color: white;
+}
+.div15{
+  position: absolute;
+  right: 10%;
+  padding: 15px 10px;
+  width: 15%;
+  height: 120px;
+}
+.a1:link , .a1:visited , .a1:active , .a2:link , .a2:visited  , .a2:active , .a3:link , .a3:visited  , .a3:active , .a4:link , .a4:visited  , .a4:active{
+    color: white;
+    text-decoration:none;
+}
+.a1:hover{
+  border-bottom:1px solid white;
+}
+.a2:hover{
+  border-bottom:1px solid white;
+}
+.a3:hover{
+  border-bottom:1px solid white;
+}
+.a4:hover{
+  border-bottom:1px solid white;
+}
+@media screen and (max-width: 768px){
+  .div14{
+    position: relative;
+    padding: 15px 10px;
+    width: 100%;
+    height: 120px;
+  }
+  .div15 {
+    position: static;
+    padding: 15px 10px;
+    width: 100%;
+    height: 120px;
+  }
+}
+@media (max-width: 900px){
+  .main3 {
+  width: 100%;
+}
+}
+@media (max-width: 1200px) and (min-width: 901px){
+  .main3 {
+    width: 35%;
+  }
+}
+@media  (min-width: 1440px) and (max-width: 2560px){
+ .main2{
+    padding: 0;
+  }
+}
+.carousel img{
+  width: 100%;
+}
+.footer2{
+  padding-right: 50px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media  (max-width: 1200px){
+  .footer2{
+      padding-right: 30px;
+      display: flex;
+      justify-content: center;
+       align-items: center;
+       padding-left: 0;
+  }
+
+    footer .footer2 ul li{
+        float:none;
+    }
+}
+.div16{
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,.1);
+  font-size: 12px;
+  color: white;
+  background-color: rgb(38,162,111);
+}
+@media  (width: 2560px){
+  .main5{
+    padding: 0 25vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media  (min-width: 901px) and (max-width: 1200px){
+  .footer2 {
+    flex-direction: row;
+  }
+}

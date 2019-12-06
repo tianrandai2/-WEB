@@ -1,0 +1,317 @@
+html{
+  background-color: rgb(250,250,250);
+}
+body{
+  background-color: rgb(250,250,250);
+}
+header{
+  width:100%;
+}
+header .top{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color: white;
+  font-size: 13px;
+  color: rgb(41,176,120);
+  height: 30px;
+}
+header .top img{
+  position: absolute;
+  right: 10%;
+  width: 80px;
+  height: 20px;
+}
+header .top span{
+  position: absolute;
+  left: 12%;
+  height: 30px;
+  line-height: 30px;
+}
+/*导航*/
+.bc{
+  position: relative;
+  background-color: rgb(41,176,120);
+  border-radius:0;
+  border: none;
+  margin-bottom:0;
+}
+.navbar-default .navbar-nav>li>a{
+  color: white;
+  padding-bottom: 12px;
+  text-decoration:none;
+}
+
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:visited{
+  color: white;
+}
+.navbar-collapse{
+  text-align: center;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color: rgb(41,176,120);
+}
+.navbar-default .navbar-toggle{
+  border-color:rgba(0,0,0,.1);
+}
+.bc img{
+  position: absolute;
+  top:3px;
+  left:12%;
+  width: 120px;
+}
+.A{
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  visibility: hidden;
+}
+header .navbar-default .navbar-nav>li:hover .A{
+  visibility: visible;
+}
+/*版心*/
+.banxin{
+  width: 100%;
+}
+.banxin img{
+  width: 100%;
+}
+/*中间主体*/
+main{
+  width: 100%;
+  padding: 0 15vw;
+  background-color: rgb(250,250,250);
+}
+main .div1{
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+main .div1 a{
+  color:rgb(41,176,120);
+  text-decoration:none;
+}
+/*主体左侧*/
+.div2{
+   width: 100%;
+   text-align: center;
+   font-size: 13px;
+   font-weight: bold;
+   padding: 10px 0;
+   border-bottom: 1px solid rgb(230,230,230);
+}
+.div3{
+   width: 100%;
+   border: 1px solid rgb(240,240,240);
+   border-radius: 5px;
+  background-color: white;
+}
+.container-fluid{
+  padding-left:0px;
+}
+.div4{
+  width: 100%;
+  text-align: center;
+}
+.div4 ul{
+  list-style:none;
+  padding-left:0px;
+  border-top-width: 10px;
+}
+.div4 ul li{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.div4 ul li a{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color:rgb(41,176,120);
+}
+.div4 ul li a::before{
+  width: 10px;
+  height:10px;
+  border: 1px solid rgb(255,117,39);
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 50%;
+  margin-left:-40px;
+}
+.div4 ul li a:hover{
+  color: rgb(255,101,14);
+}
+.div4 ul li a:hover::before{
+  background-color:rgb(249,163,114);
+}
+/*主体右侧上部*/
+.div5{
+  width: 100%;
+  border: 1px solid rgb(240,240,240);
+  border-radius: 5px;
+  background-color: white;
+}
+.div6{
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+  border-bottom: 1px solid rgb(230,230,230);
+  background-color: white;
+}
+.div7{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  background-color: white;
+}
+.div8{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  font-size: 13px;
+  color:rgb(153,153,153);
+  padding: 10px 0;
+  line-height: 23px;
+}
+.div7 img{
+  width: 100px;
+}
+@media (max-width: 768px){
+  .div7{
+    width: 100%;
+  }
+  .div7 img{
+    width: 150px;
+  }
+  .div8{
+    width: 100%;
+  }
+  .div5{
+    margin-top: 40px;
+  }
+}
+@media (max-width: 2560px) and (min-width: 1750px){
+  .div7 img{
+    width: 150px;
+  }
+  .div8{
+    width: 70%;
+  }
+  .div5{
+    width: 80%;
+  }
+}
+/*主体右侧下部*/
+.div9{
+  width: 100%;
+  font-size: 13px;
+  color:rgb(153,153,153);
+  padding: 30px;
+  line-height: 27px;
+}
+/*底部*/
+.div13{
+  display: flex;
+  flex-wrap:wrap;
+  position: relative;
+  width: 100%;
+  padding: 0 15vw;
+  background-color: rgb(38,162,111);
+}
+.div14{
+  position: relative;
+  padding: 15px 10px;
+  width: 30%;
+  height: 120px;
+}
+footer .div13 .div14 .span4{
+  position: absolute;
+  top: 20px;
+  font-size: 14px;
+  color: white;
+}
+footer .div13 .div14 .span5{
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  color: white;
+}
+.a1{
+  position: absolute;
+  top: 55px;
+  font-size: 12px;
+  color: white;
+}
+.a2{
+  position: absolute;
+  top: 55px;
+  left: 100px;
+  font-size: 12px;
+  color: white;
+}
+.a3{
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  color: white;
+}
+.a4{
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  font-size: 12px;
+  color: white;
+}
+.div15{
+  position: absolute;
+  right: 10%;
+  padding: 15px 10px;
+  width: 15%;
+  height: 120px;
+}
+.a1:link , .a1:visited , .a1:active , .a2:link , .a2:visited , .a2:active , .a3:link , .a3:visited  , .a3:active , .a4:link , .a4:visited  , .a4:active{
+  color: white;
+  text-decoration:none;
+}
+.a1:hover{
+  border-bottom:1px solid white;
+}
+.a2:hover{
+  border-bottom:1px solid white;
+}
+.a3:hover{
+  border-bottom:1px solid white;
+}
+.a4:hover{
+  border-bottom:1px solid white;
+}
+.div16{
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,.1);
+  font-size: 12px;
+  color: white;
+  background-color: rgb(38,162,111);
+}
+
+@media screen and (max-width: 768px){
+  .div14{
+    position: relative;
+    padding: 15px 10px;
+    width: 100%;
+    height: 120px;
+  }
+  .div15 {
+    position: static;
+    padding: 15px 10px;
+    width: 100%;
+    height: 120px;
+  }
+}

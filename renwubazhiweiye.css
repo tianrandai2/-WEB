@@ -1,0 +1,310 @@
+html{
+  background-color: rgb(250,250,250);
+}
+body{
+  background-color: rgb(250,250,250);
+}
+header{
+  width:100%;
+}
+header .top{
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color: white;
+  font-size: 13px;
+  color: rgb(41,176,120);
+  height: 30px;
+}
+header .top img{
+  position: absolute;
+  right: 10%;
+  width: 80px;
+  height: 20px;
+}
+header .top span{
+  position: absolute;
+  left: 12%;
+  height: 30px;
+  line-height: 30px;
+}
+/*导航*/
+.bc{
+  position: relative;
+  background-color: rgb(41,176,120);
+  border-radius:0;
+  border: none;
+  margin-bottom:0;
+}
+.navbar-default .navbar-nav>li>a{
+  color: white;
+  padding-bottom: 12px;
+  text-decoration:none;
+}
+
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:visited{
+  color: white;
+}
+.navbar-collapse{
+  text-align: center;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color: rgb(41,176,120);
+}
+.navbar-default .navbar-toggle{
+  border-color:rgba(0,0,0,.1);
+}
+.bc img{
+  position: absolute;
+  top:3px;
+  left:12%;
+  width: 120px;
+}
+.A{
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  visibility: hidden;
+}
+header .navbar-default .navbar-nav>li:hover .A{
+  visibility: visible;
+}
+/*中间主体*/
+main{
+  width: 100%;
+  padding: 0 10vw;
+  background-color: rgb(250,250,250);
+}
+main .div1{
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 20px 0;
+  border-bottom:1px solid rgb(208,214,217);
+}
+main .div1 a{
+  color:rgb(41,176,120);
+  text-decoration:none;
+}
+main .div2{
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 28px 0;
+  border-bottom:1px solid rgb(208,214,217);
+}
+main .div3{
+  margin-top: 30px;
+  padding-right: 30px;
+}
+/*前端方向*/
+.div4{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid rgb(227,231,232);
+  background-color: white;
+}
+.div5{
+  width: 100%;
+  display: flex;
+}
+.div6{
+  width: 40%;
+  padding: 10px 10px 40px 10px;
+}
+.div6 img{
+  width: 100%;
+}
+h1{
+  font-size: 15px;
+  font-weight: bold;
+}
+.table1{
+  width: 100%;
+  border-top:1px solid rgb(227,231,232);
+  font-size: 12px;
+  color: rgb(100,100,100);
+}
+.table1 .tr1{
+  padding: 10px 5px;
+  border-top:1px solid rgb(227,231,232);
+}
+.table1 .tr1 .td1{
+  width: 50%;
+  border:1px solid rgb(227,231,232);
+  border-right: none;
+  padding: 10px 5px;
+}
+.table1 .tr1 .td2{
+  width: 50%;
+  border:1px solid rgb(227,231,232);
+  border-left: none;
+  padding: 10px 5px;
+}
+.table1 .tr1 .td3{
+  width: 50%
+  border:1px solid rgb(227,231,232);
+  border-left: none;
+  padding:15px 5px;
+}
+.table1 .tr1 .td4{
+  width: 50%;
+  border-left:1px solid rgb(227,231,232);
+  border-right: none;
+  padding: 15px 5px;
+}
+
+.span1{
+  position: absolute;
+  right: 18px;
+}
+.div7{
+  width: 100%;
+  padding: 10px 0 10px 5px;
+  font-size: 15px;
+  font-weight: bold;
+  border-top: 1px solid rgb(227,231,232);
+}
+.div8{
+  font-size: 12px;
+  padding: 10px 0 10px 5px;
+  border-top:1px solid rgb(227,231,232);
+  border-bottom:1px solid rgb(227,231,232);
+}
+.div9{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0,0,0,.8);
+  display: none;
+}
+.div10{
+  font-size: 15px;
+  line-height: 25px;
+   padding: 0 20px;
+}
+.div4:hover .div9{
+  display: block;
+}
+.div9 h1{
+  font-size: 25px;
+  padding: 20px 0;
+  text-align: center;
+}
+/*后端方向*/
+.div11{
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  border-bottom:1px solid rgb(227,231,232);
+}
+/*底部*/
+/*底部*/
+.div13{
+  display: flex;
+  flex-wrap:wrap;
+  position: relative;
+  width: 100%;
+  background-color: rgb(38,162,111);
+  padding: 0 15vw;
+}
+.div14{
+  position: relative;
+  padding: 15px 10px;
+  width: 30%;
+  height: 120px;
+}
+footer .div13 .div14 .span4{
+  position: absolute;
+  top: 20px;
+  font-size: 14px;
+  color: white;
+}
+footer .div13 .div14 .span5{
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  color: white;
+}
+.a1{
+  position: absolute;
+  top: 55px;
+  font-size: 12px;
+  color: white;
+  text-decoration:none;
+}
+.a2{
+  position: absolute;
+  top: 55px;
+  left: 100px;
+  font-size: 12px;
+  color: white;
+  text-decoration:none;
+}
+.a3{
+  position: absolute;
+  bottom: 20px;
+  font-size: 12px;
+  color: white;
+  text-decoration:none;
+}
+.a4{
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  font-size: 12px;
+  color: white;
+  text-decoration:none;
+}
+.div15{
+  position: absolute;
+  right: 10%;
+  padding: 15px 10px;
+  width: 15%;
+  height: 120px;
+}
+.a1:link , .a1:visited , .a1:active , .a2:link , .a2:visited  , .a2:active , .a3:link , .a3:visited  , .a3:active , .a4:link , .a4:visited  , .a4:active{
+  color: white;
+  text-decoration:none;
+}
+.a1:hover{
+  border-bottom:1px solid white;
+}
+.a2:hover{
+  border-bottom:1px solid white;
+}
+.a3:hover{
+  border-bottom:1px solid white;
+}
+.a4:hover{
+  border-bottom:1px solid white;
+}
+.div16{
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,.1);
+  font-size: 12px;
+  color: white;
+  background-color: rgb(38,162,111);
+}
+
+@media screen and (max-width: 768px){
+  .div14{
+    position: relative;
+    padding: 15px 10px;
+    width: 100%;
+    height: 120px;
+  }
+  .div15 {
+    position: static;
+    padding: 15px 10px;
+    width: 100%;
+    height: 120px;
+  }
+}

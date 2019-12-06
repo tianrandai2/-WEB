@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.one{
+  float: left;
+  width: 31%;
+  padding-bottom: 31%;
+  border-radius: 20px;
+  margin-right: 2%;
+  margin-top: 2%;
+  background-color: gold;
+}

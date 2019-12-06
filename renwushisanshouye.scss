@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    background-color: rgb(238,239,239);
+    input[type="checkbox"] {display: none;}
+    .menu{
+        position: absolute;
+        z-index: 999999;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        .icon-bar{
+            width: 16px;
+            height: 2px;
+            background-color: white;
+        }
+    }
+    .nav {
+         display: none;
+         min-width: 70%;
+         background-color: white;
+         ul{
+            list-style:none;
+            li{
+                position: relative;
+                height: 35px;
+                display:flex;
+                align-items: center;
+                font-size: 15px;
+                color:#69D1E9;
+                border-bottom: 1px solid #f0f0f0;
+                @mixin i{
+                   width: 25px;
+                   height:25px;
+                   background-image: url(https://tianrandai2.github.io/tupian/63.png);
+                   background-size: 80%;
+                   background-repeat:no-repeat;
+                }
+                span{
+                    position: relative;
+                    top:-3px;
+                    left: 5px;
+                }
+                .div1{
+                    position: absolute;
+                    right: 5px;
+                    top:8px;
+                    width: 10px;
+                    height: 10px;
+                    margin: 3px 10px 3px 10px;
+                    transform: rotate(135deg);
+                    border-top: 2px solid #69D1E9;
+                    border-left: 2px solid #69D1E9;
+                }
+               .i1{
+                @include i;
+                   background-position: 5px 0;
+               }
+               .i2{
+                @include i;
+                background-position: 5px -24px;
+               }
+               .i3{
+                @include i;
+                background-position: 5px -47px;
+               }
+               .i4{
+                @include i;
+                background-position: 5px -71px;
+               }
+            }
+         }
+       }
+       input[type="checkbox"]:checked ~ .nav {
+        display: block;
+        transition: all .5s ease-in-out 1s;
+      }
+      input[type="checkbox"]:checked ~ .menu {
+        left: 75%;
+      }
+    .box{
+        min-width: 100%;
+header{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(41,189,224);
+}
+main{
+    padding: 0 5%;
+    .main-top{
+        position: relative;
+        width: 100%;
+        height: 58px;
+        background-color: white;
+        font-size: 16px;
+        color: rgb(154,154,154);
+        text-align: center;
+        line-height: 60px;
+        border: 1px solid rgb(201,201,201);
+        margin: 13px 0;
+
+        img{
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            width: 12px;
+            height: 18px;
+        }
+    }
+    .main-or{
+        width: 100%;
+        height: 46px;
+        background-color: white;
+        font-size: 18px;
+        color: rgb(252,200,123);
+        text-align: center;
+        line-height: 50px;
+        border: 1px solid rgb(201,201,201);
+        border-bottom: 1px solid rgb(252,200,123);
+    }
+    .main-center{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: white;
+        border: 1px solid rgb(201,201,201);
+        border-top: none;
+        a{
+            width: 100%;
+            height: 68px;
+            text-align: center;
+            line-height: 68px;
+            font-size: 15px;
+            color: white;
+            margin: 0 10%;
+            background-color: rgb(105,209,233);
+            text-decoration: none;
+          }
+          a:first-child { margin: 16px 10% 0;}
+           div{
+            width: 100%;
+            font-size: 12px;
+            color: rgb(160,160,160);
+            line-height: 40px;
+            text-align: center;
+           }
+        }
+        span{
+            position: absolute;
+            top: 41%;
+            right: 5px;
+            border-left: 15px solid rgb(251,180,53);
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+        }
+        .div5{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-bottom: 5px;
+          }
+         .div5 .div6{
+            width:10px;
+            height:10px;
+            border-radius:100%;
+            background-color: rgb(240,240,240);
+            margin-right: 5px ;
+          }
+          .div5 .div6:hover{
+            background-color: rgb(105,209,233);
+          }
+    }
+  }
+
+}
+

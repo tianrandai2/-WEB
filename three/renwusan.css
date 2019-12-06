@@ -1,0 +1,55 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{ background-color:rgb(104,205,213) ;}
+/*网页主体*/
+.one{
+  width: 100%;
+  height: 440px;
+  padding: 0px 0 80px 0;
+}
+.one>img{
+  width: 35px;
+  margin: 10px 0 0 10px;
+}
+/*中间部分文字*/
+p{
+  height: 78px;
+  margin:0px 14% 130px 14%;
+  color:white;
+  font-size:13px;
+  line-height:26px;
+}
+/*网页底部小log加文字左边*/
+.div1{
+  position:absolute;
+  color: white;
+  text-align: center;
+  left: 15%;
+}
+/*左边的小log*/
+.div1 img{
+    width: 50px;
+}
+/*左边小log下文字*/
+.div2{
+  text-align:center;
+  margin:0 3px 0 0 ;
+}
+/*网页底部小log加文字右边*/
+.div3{
+  position:absolute;
+  color: white;
+  text-align: center;
+  right: 15%;
+}
+/*右边小log*/
+.div3 img{
+  width: 50px;
+}
+/*右边小log下文字*/
+.div4{
+  text-align:center;
+  margin:0 3px 0 0 ;
+}

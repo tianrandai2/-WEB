@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  position: relative;
+  background-color: rgb(95,192,205);
+  font-size: 110%;
+  line-height: 300%;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.header .left{
+  position: absolute;
+  left:10px ;
+}
+.header .conter{
+  font-weight:bold;
+}
+.header .right{
+  position: absolute;
+  right:10px
+}
+li i{
+  display: block;
+  float: left;
+ background-image: url("images/4.png");
+  background-repeat:no-repeat;
+  width: 50px;
+  height: 50px;
+  background-size: 140%;
+}
+li{
+  line-height: 60px;
+}
+form{
+  float: left;
+}
+.bb{
+  float: left;
+  width: 1px;
+  height: 30px;
+  margin: 15px 10px;
+  background-color:rgb(234,237,238);
+}

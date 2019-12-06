@@ -1,0 +1,100 @@
+.div13{
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
+    width: 100%;
+    background-color: rgb(38,162,111);
+    padding: 0 15vw;
+    box-sizing: border-box;
+    .div14{
+        position: relative;
+        padding: 15px 10px;
+        width: 30%;
+        height: 120px;
+        box-sizing: border-box;
+        .span4{
+            position: absolute;
+            top: 20px;
+            font-size: 14px;
+            color: white;
+          }
+          .span5{
+            position: absolute;
+            bottom: 20px;
+            font-size: 12px;
+            color: white;
+          }
+          @mixin a{
+            position: absolute;
+            font-size: 12px;
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgb(38,162,111);
+          }
+          .a11{
+            @include a;
+            top: 55px;
+            &:hover{
+                border-bottom: 1px solid white;
+              }
+          }
+          .a12{
+            @include a;
+            top: 55px;
+            left: 100px;
+            &:hover{
+                border-bottom: 1px solid white;
+              }
+          }
+          .a13{
+            @include a;
+            bottom: 20px;
+            &:hover{
+                border-bottom: 1px solid white;
+              }
+          }
+          .a14{
+            @include a;
+            bottom: 20px;
+            left: 100px;
+            &:hover{
+                border-bottom: 1px solid white;
+              }
+          }
+      }
+      .div15{
+        position: absolute;
+        right: 6%;
+        padding: 15px 10px;
+        width: 15%;
+        height: 120px;
+        box-sizing: border-box;
+        font-size: 13px;
+        img{
+          margin-top: 5px;
+        }
+      }
+      @media screen and (max-width: 768px){
+        .div14{
+          position: relative;
+          padding: 15px 10px;
+          width: 100%;
+          height: 120px;
+        }
+        .div15 {
+          position: static;
+          padding: 15px 10px;
+          width: 100%;
+          height: 120px;
+        }
+       }
+    }
+  .div16{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,.1);
+    font-size: 12px;
+    color: white;
+    background-color: rgb(38,162,111);
+    box-sizing: border-box;
+  }

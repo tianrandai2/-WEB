@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+$display:flex;
+@mixin font-color($size,$color){
+     font-size:$size;
+     color: $color;
+}
+@mixin main-ul-li{
+    display: flex;
+    align-content: center;
+    white-space: nowrap;
+    width: 100%;
+    line-height: 44px;
+    font-size: 13px;
+}
+@mixin imgwhm{
+    width: 10px;
+    height: 10px;
+    margin-top: 18px;
+}
+header{
+   width: 100%;
+    .header-top{
+        width: 100%;
+        @include font-color(14px,white);
+        text-align: center;
+        line-height: 34px;
+        position: fixed;
+        z-index: 1;
+        background-color: rgb(95,192,205);
+        span{
+            float: left;
+            margin-left: 10px;
+        }
+    }
+    .header-conter{
+        width: 100%;
+        height: 145px;
+        position: relative;
+        background-image: url(https://tianrandai2.github.io/tupian//11.png);
+        background-repeat: no-repeat;
+        background-size: 100%; 
+         .img1{
+             position: absolute;
+             top: 35px;
+             left: 13px;
+             width: 75px;
+         }
+         .img2{
+            position: absolute;
+            left: 106px;
+            top: 78px;
+            width: 11px;
+         }
+         .wenben1{
+            position: absolute;
+            @include font-color(14px,white);
+            left: 106px;
+            top: 51px;
+         }
+         .wenben2{
+            position: absolute;
+            @include font-color(12px,white);
+            left: 122px;
+            top: 76px;
+         }
+    }
+}
+main{
+    width:100%;
+     .div1{
+         width: 100%;
+         height: 44px;
+         display:flex;
+         align-items: center;
+         font-size: 14px;
+         font-weight: bold;
+         border-bottom:1px solid rgb(225,229,231);
+         div{
+            width: 14px;
+            height: 14px;
+            border-right: 2px solid rgb(95, 192, 205);
+            margin-right: 14px;
+         }
+     }
+     ul{
+         width: 100%;
+         list-style-type:none;
+         li{
+            @include main-ul-li;
+            .shu{
+                width: 1px;
+                height: 12px;
+                margin-top: 18px;
+                margin-left: 8px;
+                border-right: 2px solid rgb(225,229,231);
+            }
+            .shu2{
+                margin: auto 0 auto 0;
+                width: 1px;
+                height: 15px;
+                border-right: 2px solid rgb(225,229,231);
+            }
+            .img3{
+                @include imgwhm;
+                padding: 0 5px 0 25px;
+            }
+            .img4{
+                @include imgwhm;
+                padding: 0 5px 0 8px;
+            }
+            .li-left{
+                display: flex;
+                align-items: center;
+                margin: 0 12px 0 25px;
+                font-size: 13px;
+                color: rgb(153,153,153);
+            }
+            .li-right{
+                font-size: 13px;
+                margin-left: 12px;
+            }
+            .li-right-lass{
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                width: 60%;
+                font-size: 8px;
+                margin-left: 10px;
+                line-height: 20px;
+                white-space:pre-line;
+            }
+         }
+         .div5{
+            width: 96%;
+            height: 1px;
+            margin: 0 auto 0 auto;
+            background-color: rgb(225,229,231);
+         }
+     }
+}
+footer{
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        display: flex;
+        border-top: 1px solid rgb(225,229,231); 
+        @mixin button{
+            width: 100%;
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            border-radius: 5px;
+            margin-top: 43px;
+            border: 2px solid rgb(95,192,205);
+        }
+        .button1{
+            @include button;
+            color: rgb(95,192,205);
+            background-color: white;
+            margin-left: 17px;
+            margin-right: 11px;
+        }
+        .button2{
+            @include button;
+            color: white;
+            background-color: rgb(95,192,205);
+            margin-right: 17px;
+        }
+}
