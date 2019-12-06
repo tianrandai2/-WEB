@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(41, 189, 224);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background-color:rgb(41, 189, 224);
+    color:white;
+    font-size: 20px;
+    box-shadow: inset 0 -1px 0 rgba(255,255,255,.3);
+}
+header .left{
+    width: 18px;
+    height: 18px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+    margin-left: 20px;
+}
+header .right{
+    width: 22px;
+    height: 2px;
+    background-color:white;
+    position: relative;
+    margin-right: 20px;
+    transform: rotate(45deg);
+}
+header .right::after{
+    content: "";
+    height: 22px;
+    width: 2px;
+    background-color:white;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+}
+main .content{
+margin: 50px 13% ;
+height: 320px;
+border: 2px solid white;
+background-color: rgb(255, 237, 197);
+background-image: url(https://tianrandai2.github.io/tupian/67.png);
+background-repeat: no-repeat;
+background-position:center center;
+background-size:150px;
+position: relative;
+display: flex;
+flex-wrap:wrap;
+align-content: flex-end;
+justify-content: center;
+}
+main .content .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(255, 237, 197);
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top:-30px;
+    left: 50%;
+    margin-left: -25px;
+    font-size: 18px;
+    color: rgb(245, 107, 129);
+}
+.shenfen{
+    width: 100%;
+   font-size: 20px;
+   line-height: 30px;
+   text-align: center;
+   color:blue;
+   display: none;
+}
+.text{
+   display: none;
+}
+footer{
+    background-color:rgb(41, 189, 224);
+}
+footer .ck{
+    margin: 50px 11%;
+    background-color: rgb(251, 180, 53);
+    color: white;
+    height: 50px;
+    font-size: 22px;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .ck2{
+    margin: 50px 11%;
+    background-color: rgb(251, 180, 53);
+    color: white;
+    line-height: 50px;
+    font-size: 22px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+footer .ck3{
+    margin: 50px 11%;
+    background-color: rgb(251, 180, 53);
+    color: white;
+    line-height: 50px;
+    font-size: 22px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}

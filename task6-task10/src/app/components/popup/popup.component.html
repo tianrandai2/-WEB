@@ -1,0 +1,24 @@
+  <div class="cover">
+  <div class="prompt_box" >
+   <div class="tishi">
+     <span class="hint">操作提示</span>
+     <span class="close">关闭</span>
+   </div>
+   <div class="text"  *ngIf="this.goonline==0">上线后该图片将在轮播banner中展示。</div>
+   <div class="text2" *ngIf="this.goonline==0">是否执行上线操作</div>
+   <div class="text"  *ngIf="this.goonline==1">下线后该图片将不展示站轮播banner中。</div>
+   <div class="text2" *ngIf="this.goonline==1">是否执行下线操作</div>
+   <div class="text3" *ngIf="this.goonline==2">是否确认删除</div>
+   <div class="text3" *ngIf="this.goonline==6">操作成功</div>
+   <div class="text3" *ngIf="this.goonline==7">操作失败</div>
+   <div class="text3" *ngIf="this.goonline==3">新增成功</div>
+   <div class="text3" *ngIf="this.goonline==4">新增失败</div>
+   <div class="but">
+    <button (click)="no()" *ngIf="this.goonline==0||this.goonline==1||this.goonline==2" class="but1">取消</button>
+    <button (click)="yes0()" *ngIf="this.goonline==0" class="but2">确定</button>
+    <button (click)="yes1()" *ngIf="this.goonline==1" class="but2">确定</button>
+    <button (click)="yes2()" *ngIf="this.goonline==2" class="but2">确定</button>
+    <button (click)="no()" *ngIf="this.goonline==6||this.goonline==7||this.goonline==3||this.goonline==4" class="but2">确定</button>
+   </div>
+  </div>
+</div>

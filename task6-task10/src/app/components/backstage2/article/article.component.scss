@@ -1,0 +1,283 @@
+header{
+    margin: 25px 25px;
+    height: 160px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    background: white;
+    @mixin type{ font-size: 13px;
+                  font-weight:900;
+                }
+       
+   .one{
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 15px 0 20px;
+        position: relative;
+        .time{
+            @include type;
+            margin: 0 25px;
+        }
+        .datetime{
+           width: 180px;
+           height: 30px;
+           border: 1px solid rgb(206, 205, 205);
+           border-radius: 5px;
+           font-size: 14px;
+           padding-left: 10px;
+        }
+        .fenge{
+            width: 15px;
+            height: 2px;
+            background: black;
+            margin: 0 55px;
+        }
+        .leixing{
+            @include type;
+            margin: 0 40px
+        }
+    
+       .locn{
+        position: absolute;
+        right: 20px;
+        width:0px;
+        border-left:3px solid white;
+        border-right:3px solid white;
+        border-top: 7px solid black;
+       
+      }
+    }
+    .two{
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 15px 0;
+        .state{
+            @include type;
+            margin: 0 25px;
+        }
+        
+    }
+
+    .three{
+        display:flex;
+        height: 45px;
+        justify-content:flex-end ;
+        align-items: center;
+        @mixin button{
+            width:50px;
+            height: 30px;
+            outline: none;
+            border-radius: 5px;
+            color:white;
+        }
+        .button1{
+            @include button;
+            background: rgb(80, 173, 80);
+            border: 1px solid rgb(80, 173, 80);
+            margin-right: 20px;
+            cursor:pointer;
+        }
+        .button2{
+            @include button;
+            background: rgb(212, 14, 14);
+            border: 1px solid  rgb(212, 14, 14);
+            margin-right: 5px;
+            cursor:pointer;
+        }
+    }
+    .down{
+        -webkit-appearance: none;
+        width: 190px;
+        height:30px;
+        font-size: 13px;
+        padding-left: 15px;
+        border-radius:5px;
+        background-image: url("https://tianrandai2.github.io/tupian/66.png");
+        background-repeat: no-repeat;
+        background-position:98% -5px;
+       }
+}
+@media screen and (max-width: 1000px){
+    header{
+        height:auto;
+    
+    .one{
+       flex-wrap:wrap;
+       .datetime{
+           width:100%;
+           margin:10px;
+       }
+       .leixing{
+        margin: 0 25px
+    }
+    .fenge{
+        margin: 0 25px;
+      }
+    }
+    .down{
+       width:100%;
+       margin:10px;
+   }
+   .two{
+       flex-wrap:wrap;  
+  }
+ 
+}
+}
+    .List_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 25px 25px 0;
+        height:35px;
+        border: 1px solid gainsboro;
+        border-bottom: none;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        font-size: 13px;
+        font-weight:900;
+        .add{
+         width: 45px;
+         height: 20px;
+         background: rgb(80, 173, 80);
+         border: 1px solid rgb(80, 173, 80);
+         outline: none;
+         border-radius: 3px;
+         color:white;
+         font-size: 12px;
+         margin-right: 10px;
+         cursor:pointer;
+         i{
+             margin-right: 2px;
+             background:rgb(80, 173, 80);
+             color:white;  
+         }
+        }
+    }
+    .list_main{
+        margin: 0px 25px;
+        height:auto;
+        background: white;
+        border:1px solid gainsboro;
+        overflow-x: scroll;
+        @mixin contents{
+            border:1px solid gainsboro;
+            display: flex;
+        }
+        @mixin list{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+            flex-shrink:0;
+        
+        }
+        .list_sort{
+            margin: 15px 10px 0;
+            height: 30px;
+            font-weight: 900;
+            min-width: 940px;
+            @include contents;
+        }
+        .id{
+           @include list;
+           width:50px
+        }
+        .imge{
+            @include list;
+            width:80px
+        }
+        .name{
+           @include list;
+           width:120px
+        }
+        .type{
+           @include list;
+           width:120px
+        }
+        .releaseTime{
+           @include list;
+           width:120px;
+        }
+        .modificationTime{
+           @include list;
+           width:120px;
+        }
+        .publisher{
+           @include list;
+           width:80px;
+        }
+        .zhuangtai{
+           @include list;
+           width:70px;
+        }
+        .operation{
+           @include list;
+           width:180px;
+        }
+       .bianji{
+           margin: 0 10px;
+           font-size: 12px;
+           color:rgb(51, 122, 183);
+           cursor:pointer;
+       }
+       .list_contents{
+        @include contents;
+        margin: 0 10px;
+        height: 50px;
+        img{
+            width:50px;
+            height:40px
+        }
+       }
+       .list_contents:nth-child(even){
+           background:#EEE;
+       }
+       .list_contents:hover{
+        background: #e0f2be;;
+    }
+    }
+   .page{
+       margin: 0 35px;
+       text-align:right;
+       line-height: 50px;
+       font-size: 14px;
+       @mixin page1{
+        width:35px;
+        height: 25px;
+        text-align: center;
+       }
+       .tiao{
+        @include page1;
+           margin: 0 5px;
+       }
+       .page1{
+           border:1px solid rgb(221,221,221);
+           padding:4px 8px;
+           margin: 0 10px;
+           color:rgb(51, 122, 183);
+           background: white;
+           cursor:pointer;
+       }
+       .page2{
+        border:1px solid rgb(221,221,221);
+        padding:4px 10px;
+        margin: 0 5px;
+        color:rgb(51, 122, 183);
+        background: white;
+        cursor:pointer;
+       }
+       .page3{
+        border:1px solid rgb(221,221,221);
+        padding:4px 10px;
+        margin: 0 5px;
+        color:rgb(51, 122, 183);
+        background: white;
+        cursor:pointer;
+       }
+   }
+   .colors{
+       background: blue !important;
+       color: white !important;
+   }

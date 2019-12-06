@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>葡萄藤PPT</title>
+
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/reveal.css">
+
+    <!-- PPT主题，可以在/css/reveal/theme/中选择其他主题，目前暂时只能使用该模板 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/theme/ptt.css">
+
+    <!-- syntax highlighting 代码高亮主题 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/lib/reveal/css/zenburn.css">
+
+    <!-- 打印和PDF输出样式 -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ?
+            'https://ptteng.github.io/PPT/css/reveal/print/pdf.css' :
+            'https://ptteng.github.io/PPT/css/reveal/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+   
+    <map name="pttmap">
+        <area shape="rect" coords="0,0,276,58" href="http://www.jnshu.com" alt="" target="_blank" />
+    </map>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h4>JS有哪些数据类型和常用方法</h4>
+                <h4>分享人：周家正</h4>
+            </section>
+            <section>
+                <p>目录</p>
+                <p>1.背景介绍</p>
+                <p>2.知识解剖</p>
+                <p>3.常见问题</p>
+                <p>4.解决方案</p>
+                <p>5.编码实战</p>
+                <p>6.扩展思考</p>
+                <p>7.参考文献</p>
+                <p>8.更多讨论</p>
+                <p>9.鸣谢</p>
+            </section>
+            <section>
+                <h3>1.背景介绍</h3>
+            </section>
+
+            <section style="font-family: 'Times New Roman'; text-transform:none;">
+                <section>
+                    <p style="text-align: left;">
+                       
+                        在JS中一共有六种数据类型：按照特点可以分为基础数据类型和引用数据类型，
+                        基础数据类型有5个分别是String 字符串、Number 数值、Boolean 布尔值、Null 空值，空对象指针、Undefined 未定义。
+                        引用数据类型只有1个就是对象object，函数，数组，内置对象Date、RegExp、Error等都是属于Object类型。
+                        也就是说除了那5种基本数据类型其他都是对象。
+                    </p>
+                </section>
+            </section>
+            <section>
+                <h3>2.知识剖析</h3>
+            </section>
+                <section>
+                    <p style="text-align: left;">
+                        基本数据类型与引用数据类型最大的区别就是基本数据类型：参数赋值的时候，传数值。引用数据类型：参数赋值的时候，传地址（修改的同一片内存空间）。
+                        基本数据类型可以被保存在栈内存当中，引用数据类型保存在堆内存当中。
+                        下面挨个数据类型介绍一下
+                    </p>
+                </section>
+                <section>
+                   <p>string类型</p> 
+                </section>
+                <section>
+                    <p>
+                        string类型叫做字符串
+                        <br>
+                        （1）在JS中，字符串需要使用引号引起来。使用双引号或单引号都可以，但是不要混着用。比如下面这样写是不可以的：
+                            var str = `hello";
+                            <br>
+                        （2）引号不能嵌套：双引号里不能再放双引号，单引号里不能再放单引号。但是单引号里可以嵌套双引号。
+                            <br>
+                        （3）转义字符：在字符串中我们可以使用\作为转义字符，当表示一些特殊符号时可以使用\进行转义。
+                    </p>
+                </section>
+                <section>
+                <p>number类型</p>
+                </section>
+                <section>
+                    <p style="text-align: left;">
+                        在JS中所有的数值都是Number类型，包括整数和浮点数（小数）。
+                        js中多增加一个number类型的数据较NAN。<br>
+                        数值范围：
+                        由于内存的限制，ECMAScript 并不能保存世界上所有的数值。
+                        最大值：Number.MAX_VALUE，这个值为： 1.7976931348623157e+308，
+                        最小值：Number.MIN_VALUE，这个值为： 5e-324，
+                        如果使用Number表示的变量超过了最大值，则会返回Infinity。
+                        无穷大（正无穷）：Infinity，
+                        无穷小（负无穷）：-Infinity，
+                        NaN：是一个特殊的数字，表示Not a Number，非数值但是属于number类型。
+                        这里注意一下NaN代表除了数字以外任何一个东西，他是包罗万象的，所以NaN跟谁都不相等包括他自己。
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        Boolean类型
+                    </p>
+                </section>
+                <section>
+                    <p style="text-align: left;">
+                        Boolean类型就2个true和false，主要用来做逻辑判断。<br>
+                        布尔值直接使用就可以了，千万不要加上引号。var a = 'true';这不是布尔类型这就是字符串。
+                    </p>
+                </section>
+                <section>
+                    <p>
+                     null与undefine
+                    </p>
+                </section>
+                
+                <section style="font-family: 'Times New Roman'; text-transform:none;">
+                    <p style="text-align: left;">
+                        null：空值<br>
+                        专门用来表示一个为空的对象（例如：var a = null）。注意，专门用来表示空对象。
+                        Null类型的值只有一个，就是null。比如：var a = null。
+                        使用 typeof 检查一个null值时，会返回object。
+                        声明了一个变量，但是没有赋值（例如：var a;），此时它的值就是undefined。
+                        Undefined类型的值只有一个，就是undefind，
+                        使用 typeof 检查一个undefined时，会返回undefined。
+                        null和undefined有最大的相似性。看看null == undefined的结果(true)也就更加能说明这点。
+                        但是null === undefined的结果(false)。它们虽然相似，但还是有区别的，其中一个区别是：和数字运算时，10 + null结果为：10；10 + undefined结果为：NaN。
+                        任何数据类型和undefined运算都是NaN;
+                        任何值和null运算，null可看做0运算。
+                    </p>
+                </section>
+                <section style="font-family: 'Times New Roman'; text-transform:none;">
+                    <p style="text-align: left;">
+                       null和undefine都代表没有，那么他们两个有什么区别。<br>
+                       null一般指暂时没有，但是预期会有，但是以后会不会有不一定。
+                       在js中null一般都是手动赋值为null，后期在给赋值。<br>
+                       undefine是完全没在预期之内的，undefine一般不是我们手动造成的。
+                    </p>
+                </section>
+                <section style="font-family: 'Times New Roman'; text-transform:none;">
+                  <p>引用数据类型</p>
+                </section>
+                <section style="font-family: 'Times New Roman'; text-transform:none;">
+                    <p style="text-align: left;">
+                        引用数据类型分为普通对象，函数，数组，正则等。
+                        每一个对象都是由0到多组健值对组成的，每一组键值对中间用逗号分隔，
+                        对象的作用是：封装信息。对象具有特征（属性）和行为（方法）。
+                    </p>
+                </section>
+             
+            </section> -->
+                <section>
+                    <h3>3.常见问题</h3>
+                 各个数据类型相互之间怎么转换
+                </section>
+
+      
+                <section>
+                    <p style="text-align: left;">
+                        强制类型转换：将一个数据类型强制转换为其他的数据类型。
+                        类型转换主要指，将其他的数据类型，转换为：String、Number、Boolean。
+                        把其他数据类型转换成string类型主要有3种方法。<br>
+                        （1）调用toString()方法。<br>
+                        （2）使用String()函数。<br>
+                        （3）字符串拼接。<br>
+                        调用toString()方法,不会影响到原变量，它会将转换的结果返回。<br>
+                        null和undefined这两个值没有toString()方法，使用会报错.<br>
+                        使用String()函数做强制类型转换时：
+                        对于Number和Boolean而言，实际上就是调用toString()方法。
+                        但是对于null和undefined，就不会调用toString()方法。
+                        它会将 null 直接转换为 "null"。将 undefined 直接转换为 "undefined"。
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                       其他数据类型转换为number数据类型;<br>
+                       (1)使用Number()函数;<br>
+                       (2)parseInt()函数;<br>
+                       (3)parseFloat()函数<br>
+                       使用Number()函数时，<br> 
+                       1.如果字符串中是纯数字，则直接将其转换为数字。
+                       2.如果字符串中有非数字的内容，则转换为NaN。
+                       3.如果字符串是一个空串或者是一个全是空格的字符串，则转换为0。
+                       4.如果是布尔类型转换为数字，true转换成1，false转换成0。
+                       5.null转换成数字为0，undefine转换成数字是NaN。<br>
+                       6.转化引用数据类型时是首先把引用数据类型用tostring方法转换成字符串，然后再把字符串转化为number。
+                       所以对象转化成数字都是NaN
+                     
+                    </p>
+                </section>
+
+                <section>
+                    <p style="text-align: left;">
+                        parseInt()的作用是将字符串中的有效的整数内容转为数字,parseInt()还具有以下特性：<br>
+                        (1)只保留字符串最开头的数字，后面的中文自动消失。<br>
+                        (2) 自动带有截断小数的功能：取整，不四舍五入。<br>
+                        (3)如果对非String使用parseInt()或parseFloat()，它会先将其转换为String然后再操作。
+                        parseFloat()的作用是：将字符串转换为浮点数。
+                        parseFloat()和parseInt()的作用类似，不同的是，parseFloat()可以获得有效的小数部分。
+                    </p>
+                </section>
+                <section>
+                    <p style="text-align: left;">
+                       其他数据类型转换为Bollean <br>
+                       将其他的数据类型转换为Boolean，可以使用Boolean()函数。
+                       情况一：数字 --> 布尔。除了0和NaN，其余的都是true。
+                       情况二：字符串 ---> 布尔。除了空串，其余的都是true。
+                       情况三：null和undefined都会转换为false。
+                       情况四：对象也会转换为true。
+                    </p>
+                </section>
+                <section>
+                    <h3>5.编码实战</h3>
+                    <p>
+                     见正文
+                    </p>
+                </section>
+ 
+                <section>
+                     <h3>6.扩展思考</h3>
+                    <p>数据类型常用的方法</p> 
+                </section>
+                <section>
+                        <p style="text-align: left;">
+                         string类型的常用方法。<br>
+                         substr(n，m)方法,从索引n开始，截取m个字符<br>
+                         substring（n,m）从索引n开始截取到索引为m处（不包含m）的字符。<br>
+                         slice（n，m）；和sunstring语法一样，区别在于slice支持以负数作为索引，
+                         当索引是负数的时候浏览器处理是字符串的总长度加上负数索引在按照正数处理。<br>
+                         如果只写参数n，不写m相当于从索引n开始一直截取到末尾，如果传递的索引超出最大限制，也是把能截取的部分截取掉。如果一个参数都不传，相当于把整个字符串都截取掉，字符串的克隆
+                        </p>
+                    </section>
+                    <section>
+                            <p style="text-align: left;">
+                             number类型的常用方法。<br>
+                             number类型的常用方法上面已经提到了3种，1.使用Number()函数，
+                             2.parseInt()函数;
+                             3.parseFloat()函数，这里主要讲一下isNaN()这个函数，
+                             isNaN（）函数是用来检测当前这个值是否为非有效数字，如果不是有效数字检查结果是true，是有效数字为false。
+                             注意一点当用isNaN检测值的时候，检测的值不是number类型的，浏览器会默认用Number（）函数把值先转换为number类型，然后再去检测。
+                             所以字符串数字会被当成数值。用isNaN检测布尔值也是false
+                            </p>
+                        </section>
+                <section>
+                    <h3>7.参考文献</h3>
+                </section>
+                <section style="text-align:left">
+                    <h6>
+                        <p>https://github.com/qianguyihao/Web
+                        </p>
+                        <p>http://www.zhufengpeixun.cn/ 珠峰视频</p>
+                    </h6>
+                </section>
+                <section>
+                    <h4>鸣谢</h4>
+                    <p>感谢大家观看</p>
+                    <p>
+                        <small style="vertical-align: middle"></small>
+                    </p>
+                </section>
+        </div>
+    </div>
+
+    <script src="https://ptteng.github.io/PPT/lib/reveal/js/head.min.js"></script>
+    <script src="https://ptteng.github.io/PPT/lib/reveal/reveal.js"></script>
+
+    <script>
+        // 以下为常见配置属性的默认值
+        // {
+        // 	controls: true, // 是否在右下角展示控制条
+        // 	progress: true, // 是否显示演示的进度条
+        // 	slideNumber: false, // 是否显示当前幻灯片的页数编号，也可以使用代码slideNumber: 'c / t' ，表示当前页/总页数。
+        // 	history: false, // 是否将每个幻灯片改变加入到浏览器的历史记录中去
+        // 	keyboard: true, // 是否启用键盘快捷键来导航
+        // 	overview: true, //                                                                                                                                                                                                                                                                                                      是否启用幻灯片的概览模式，可使用"Esc"或"o"键来切换概览模式
+        // 	center: true, // 是否将幻灯片垂直居中
+        // 	touch: true, // 是否在触屏设备上启用触摸滑动切换
+        // 	loop: false, // 是否循环演示
+        // 	rtl: false, // 是否将演示的方向变成RTL，即从右往左
+        // 	fragments: true, // 全局开启和关闭碎片。
+        // 	autoSlide: 0, // 两个幻灯片之间自动切换的时间间隔（毫秒），当设置成 0 的时候则禁止自动切换，该值可以被幻灯片上的 ` data-autoslide` 属性覆盖
+        // 	transition: 'default', // 切换过渡效果，有none/fade/slide/convex/concave/zoom
+        // 	transitionSpeed: 'default', // 过渡速度，default/fast/slow
+        // 	mouseWheel: true, //是否启用通过鼠标滚轮来切换幻灯片
+        // }
+        // 初始化幻灯片
+        Reveal.initialize({
+            //        history: true,
+            transition: 'default',
+            transitionSpeed: 'slow',
+            dependencies: [{
+                    src: '../plugin/markdown/marked.js'
+                },
+                {
+                    src: '../plugin/markdown/markdown.js'
+                },
+                {
+                    src: '../plugin/notes/notes.js',
+                    async: true
+                },
+                {
+                    src: '../plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                }
+            ]
+        });
+        //    原始类型对象直接赋值不会相互影响
+        //    var a = 1;
+        //
+        //    var b = a;
+        //    b = 10;
+        //    console.log(a); // 1
+        ////
+        //    var a = 'hello';
+        //    var b = a;
+        //    b = 'world';
+        //    console.log(a); // hello
+        //
+        //    var a = true;
+        //    var b = a;
+        //    b = false;
+        //    console.log(a);
+        //数组浅复制
+        //    var a = ['隔壁老王','冠希哥', '宋经理' //定义一个名为a的属猪，里面有3个值，
+        //    ];
+        //    var b = a;   //定义一个变量b，把a赋值给他，这样比、b和a一样了
+        //    b[2] = '冲冲老师'; //然后把b的第三个值等于冲冲老师
+        //    console.log(a)//那么现在打印a 是什么结果呢
+        //
+        //    var arr = ["One","Two","Three"];   //数组的深复制，slice方法
+        //    var arrtoo = arr.slice(1);
+        //    arrtoo[2] = "set Map";
+        //    console.log(arr);//One,Two,Three
+        //    console.log(arrtoo);//One,set Map,Three
+        //
+        //    var arr1 = ["One","Two","Three"]; //数组的深复制，concat 方法
+        //    var arrtooo = arr1.concat(111111);
+        //    arrtooo[1] = "set Map To";
+        //    console.log(arr1);//One,Two,Three
+        //    console.log(arrtooo);//One,set Map To,Three
+        //
+        //    var b=[1,2,3,4,5];   //concat的链接
+        //    var c=[6,7,8,9];
+        //    var d =[4,4,22]
+        //    console.log(b.concat(c,d))
+        var a = {
+            name: 'yy',
+            age: 26
+        }; //对象的浅拷贝哦
+        var b = new Object();
+        b.name = a.name;
+        b.age = a.age;
+        b.name = 'xx';
+        console.log(a); //Object { name="yy", age=26}
+        console.log(b); //Object { name="xx", age=26}
+        var d = { //对象的浅拷贝哦 第一种
+            name: 'd',
+            oc: {
+                age: 32
+            },
+            oad: {
+                adds: {
+                    bb: 12
+                }
+            }
+        };
+        var deepCopy = function (source) {
+            var result = {};
+            for (var key in source) {
+                result[key] = typeof source[key] === 'object' ? deepCopy(source[key]) : source[key]
+            }
+            return result
+        };
+        var c = deepCopy(d);
+        c.name = 'c';
+        c.oc = {
+            age: 49
+        };
+        console.log(c);
+        console.log(d);
+        //    var person = {    //第二种深拷贝
+        //        name: 'aa',
+        //        friends: ['da', 'dsa', 'gf']
+        //    };
+        //
+        //    var aPerson = Object.create(person, {
+        ////        name: {
+        ////            value: "gee"
+        ////        }
+        //    });
+        //
+        //    console.log(person.name);
+        //    console.log(aPerson.friends)
+        var Chinese = {
+            nation: '中国'
+        }
+        var Doctor = {
+            career: '医生'
+        }
+
+        function extendCopy(p) {
+            var c = {};
+            for (var i in p) {
+                c[i] = p[i];
+            }
+            c.uber = p;
+            return c;
+        }
+        var Doctor = extendCopy(Chinese);
+        Doctor.career = '医生';
+        console.log(Doctor); // 中国
+        Chinese.birthPlaces = ['北京', '上海', '香港'];
+        var Doctor = extendCopy(Chinese);
+        Doctor.birthPlaces.push('厦门');
+    </script>
+</body>
+
+</html>

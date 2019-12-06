@@ -1,0 +1,42 @@
+<!-- 顶部 -->
+<header>
+    <div class="system_name">
+    <h4>萝卜多后台管理系统</h4>
+    <button class="header_popup" id="header_popup" (click)="list()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    </div>
+    <div class="identity"><!-- 身份-->
+    <div class="user">{{identity}}</div>
+     <div class="line"></div>  <!-- 分隔符-->
+    <div class="user">{{user}}</div><!--用户-->
+    <div class="line"></div>
+    <button class="sign_out"></button><!--返回摁扭-->
+    </div>
+</header>
+<main>
+    <div class="main_left" >
+       <ul class='list_page'>
+           <li *ngFor="let item of detalist_list" class="display_list_box">
+               <div class="display_list">
+                <i class="fa  fa-pencil"></i>
+                <span class="cente"> {{item.name}}</span>
+                <span class="lcon"></span>
+               </div>
+             <ul class="hidden_list_box">
+         <a [routerLink]="[ lite.route]"  *ngFor="let lite of item.list" style="text-decoration:none" > <li  class="hidden_list"  routerLinkActive='active'>{{lite.title}}</li></a>    
+         <!-- <a [routerLink]="[ lite.route,lite.biography]"  *ngFor="let lite of item.list" style="text-decoration:none" > <li  class="hidden_list"  routerLinkActive='active'>{{lite.title}}</li></a>  -->
+            </ul>
+           </li>
+       </ul>
+       <!-- <a [routerLink]="[ '/Backstage2/Article',12345]" routerLinkActive='active' >name</a> -->
+       
+    </div>
+    <div class="main_right">
+        <div class="Welcome">Welcome!</div>
+        <router-outlet></router-outlet>
+    </div>
+    
+</main>
